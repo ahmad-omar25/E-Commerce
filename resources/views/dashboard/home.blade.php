@@ -1,4 +1,5 @@
 @extends('dashboard.layout.app')
+@section('title', (__('dashboard.home')))
 @section('content')
     <div class="content-body">
         <div class="row">

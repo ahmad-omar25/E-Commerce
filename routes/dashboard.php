@@ -15,7 +15,7 @@ use Illuminate\Support\Facades\Route;
 
 Route::group(['prefix' => LaravelLocalization::setLocale(), 'middleware' => ['localeSessionRedirect', 'localizationRedirect', 'localeViewPath']],
     function () {
-        Route::group(['prefix' => 'admin', 'namespace' => 'Dashboard'], function () {
+        Route::group(['prefix' => 'admin', 'namespace' => 'Dashboard', 'middleware' => 'guest:admin'], function () {
             Route::get('login', 'Auth\LoginController@showAdminLoginForm');
             Route::get('register', 'Auth\RegisterController@showAdminRegisterForm');
             Route::post('login', 'Auth\LoginController@adminLogin')->name('admin.login');

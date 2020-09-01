@@ -12,12 +12,6 @@ use Illuminate\Support\Facades\Validator;
 
 class RegisterController extends Controller
 {
-    public function __construct()
-    {
-        $this->middleware('guest');
-        $this->middleware('guest:admin');
-    }
-
     public function showAdminRegisterForm()
     {
         return view('dashboard.auth.register');
