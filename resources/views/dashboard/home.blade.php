@@ -91,5 +91,65 @@
             </div>
         </div>
     </div>
+    <div class="row match-height">
+        <div class="col-12 col-xl-7">
+            <div class="card" style="height: 355px;">
+                <div class="card-header">
+                    <h4 class="card-title">{{__('dashboard.orders.latest_orders')}}</h4>
+                    <a class="heading-elements-toggle"><i class="la la-ellipsis-v font-medium-3"></i></a>
+                </div>
+                <div class="card-content">
+                    <div class="table-responsive">
+                        <table class="table table-de mb-0">
+                            <thead>
+                            <tr>
+                                <th>{{__('dashboard.orders.order_number')}}</th>
+                                <th>{{__('dashboard.orders.client_name')}}</th>
+                                <th>{{__('dashboard.orders.order_status')}}</th>
+                                <th>{{__('dashboard.orders.total')}}</th>
+                            </tr>
+                            </thead>
+                            <tbody>
+                            <tr class="bg-success bg-lighten-5">
+                                <td>10583.4</td>
+                                <td>10583.4</td>
+                                <td>10583.4</td>
+                                <td>10583.4</td>
+                            </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-12 col-xl-5">
+            <div class="card" style="height: 355px;">
+                <div class="card-header">
+                    <h4 class="card-title">{{__('dashboard.reviews.latest_reviews')}}</h4>
+                    <a class="heading-elements-toggle"><i class="la la-ellipsis-v font-medium-3"></i></a>
+                </div>
+                <div class="card-content">
+                    <div class="table-responsive">
+                        <table class="table table-de mb-0">
+                            <thead>
+                            <tr>
+                                <th>{{__('dashboard.reviews.client_name')}}</th>
+                                <th>{{__('dashboard.reviews.product_name')}}</th>
+                                <th>{{__('dashboard.reviews.review')}}</th>
+                            </tr>
+                            </thead>
+                            <tbody>
+                            <tr class="bg-danger bg-lighten-5">
+                                <td>10599.5</td>
+                                <td>10599.5</td>
+                                <td>10599.5</td>
+                            </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
     @include('sweetalert::alert')
 @endsection

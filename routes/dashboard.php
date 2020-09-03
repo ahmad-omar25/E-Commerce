@@ -26,7 +26,17 @@ Route::group(['prefix' => LaravelLocalization::setLocale(), 'middleware' => ['lo
 
 Route::group(['prefix' => LaravelLocalization::setLocale(), 'middleware' => ['localeSessionRedirect', 'localizationRedirect', 'localeViewPath']], function () {
     Route::group(['prefix' => 'admin', 'namespace' => 'Dashboard', 'middleware' => 'auth:admin'], function () {
+
+        // Homepage Route
         Route::get('/', 'HomeController@index')->name('admin.dashboard');
+
+        // Settings Routes
+        Route::group(['prefix' => 'settings'], function () {
+            Route::get('shipping-methods/{type}', 'SettingController@editShippingMethods')->name('shipping.edit.methods');
+            Route::put('shipping-methods/{id}', 'SettingController@updateShippingMethods')->name('shipping.update.methods');
+        });
+
+        // Logout Route
         Route::any('logout', 'Auth\LoginController@logout')->name('admin.logout');
     });
 });
