@@ -1,4 +1,5 @@
 @extends('dashboard.layout.app')
+@section('title', (__('dashboard.settings.means_of_delivery')))
 @section('content')
     <div class="content-header row">
         <div class="content-header-left col-md-6 col-12 mb-2">
@@ -20,8 +21,9 @@
                 <div class="col-md-12">
                     <div class="card">
                         <div class="card-header">
-                            <h4 class="card-title"
-                                id="basic-layout-form">{{__('dashboard.settings.edit_means_of_delivery')}}</h4>
+                            <h4 class="card-title" id="basic-layout-form">
+                                <i class="ft-check-circle"></i>
+                                {{__('dashboard.settings.edit_means_of_delivery')}}</h4>
                             <a class="heading-elements-toggle"><i
                                     class="la la-ellipsis-v font-medium-3"></i></a>
                             <div class="heading-elements">
@@ -44,7 +46,7 @@
                                         <div class="row">
                                             <div class="col-md-6">
                                                 <div class="form-group">
-                                                    <label for="value"> الاسم </label>
+                                                    <label for="value">{{__('dashboard.settings.name_delivery')}}</label>
                                                     <input type="text" value="{{$shippingMethod -> value  }}" id="name"
                                                            class="form-control"
                                                            placeholder="  "
@@ -54,10 +56,9 @@
                                                     @enderror
                                                 </div>
                                             </div>
-
                                             <div class="col-md-6">
                                                 <div class="form-group">
-                                                    <label for="plain_value"> قيمه التوصيل </label>
+                                                    <label for="plain_value">{{__('dashboard.settings.price_delivery')}}</label>
                                                     <input value="{{number_format($shippingMethod -> plain_value, 2)}}"
                                                            id="plain_value"
                                                            class="form-control"
@@ -68,10 +69,7 @@
                                                     @enderror
                                                 </div>
                                             </div>
-
                                         </div>
-
-
                                     </div>
 
                                     <div class="form-actions">

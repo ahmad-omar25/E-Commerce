@@ -47,8 +47,21 @@ return [
         'name' => 'الاعدادات',
         'means_of_delivery' => 'وسائل التوصيل',
         'edit_means_of_delivery' => 'تعديل وسيلة التوصيل',
+        'name_delivery' => 'وسيلة التوصيل',
+        'price_delivery' => 'قيمه التوصيل',
         'free_delivery' => 'توصيل مجاني',
         'internal_delivery' => 'توصيل داخلي',
         'external_delivery' => 'توصيل خارجي',
+    ],
+
+    // Edit Profile
+    'profile' => [
+        'hello' => 'مرحبا ,',
+        'edit_profile' => 'تعديل الملف الشخصي',
+        'name' => 'الاسم',
+        'email' => 'البريد الالكتروني',
+        'password' => 'كلمة المرور',
+        'password_confirmation' => 'تاكيد كلمة المرور',
+        'logout' => 'تسجيل خروج',
     ],
 ];

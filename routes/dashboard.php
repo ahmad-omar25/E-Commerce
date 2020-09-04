@@ -30,6 +30,12 @@ Route::group(['prefix' => LaravelLocalization::setLocale(), 'middleware' => ['lo
         // Homepage Route
         Route::get('/', 'HomeController@index')->name('admin.dashboard');
 
+        // User Profile Routes
+        Route::group(['prefix' => 'profile'], function () {
+            Route::get('edit', 'ProfileController@edit')->name('edit.profile');
+            Route::put('update', 'ProfileController@update')->name('update.profile');
+        });
+
         // Settings Routes
         Route::group(['prefix' => 'settings'], function () {
             Route::get('shipping-methods/{type}', 'SettingController@editShippingMethods')->name('shipping.edit.methods');

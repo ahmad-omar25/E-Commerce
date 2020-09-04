@@ -20,27 +20,26 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="fe1aae20-efbc-4116-bf1c-4bbbb6c649bb" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/Dashboard/SettingController.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Http/Requests/Dashboard/Shipping/Update.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Models/Setting.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Models/SettingTranslation.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/config/translatable.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/database/migrations/2020_09_02_180137_create_settings_table.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/database/migrations/2020_09_02_180424_create_setting_translations_table.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/database/seeds/AdminDatabaseSeeder.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/database/seeds/SettingDatabaseSeeder.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/lang/en/dashboard.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/dashboard/settings/shipping/edit.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/dashboard/shared/buttons/back.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Helpers/general.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/Dashboard/ProfileController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Http/Requests/Dashboard/Profile/Update.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Models/Category.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Models/CategoryTranslation.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/database/factories/CategoryFactory.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/database/migrations/2020_09_04_171752_create_categories_table.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/database/migrations/2020_09_04_171859_create_category_translations_table.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/database/seeds/CategorySeeder.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/dashboard/profile/edit.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/app.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/app.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/laravellocalization.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/laravellocalization.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Dashboard/SettingController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Dashboard/SettingController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Middleware/Authenticate.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Middleware/Authenticate.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/seeds/AdminDatabaseSeeder.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/seeds/AdminSeeder.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/database/seeds/DatabaseSeeder.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/seeds/DatabaseSeeder.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/seeds/SettingDatabaseSeeder.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/seeds/SettingSeeder.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/lang/ar/dashboard.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/lang/ar/dashboard.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/dashboard/home.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/dashboard/home.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/dashboard/includes/sidebar.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/dashboard/includes/sidebar.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/dashboard/shared/buttons/delete.blade.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/dashboard/shared/buttons/edit.blade.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/dashboard/includes/navbar.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/dashboard/includes/navbar.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/dashboard/settings/shipping/edit.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/dashboard/settings/shipping/edit.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/routes/dashboard.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/dashboard.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -184,17 +183,18 @@
     <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/resources/lang/en" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/resources/views/dashboard/profile" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\wamp64\www\E-commerce\app\Models" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\wamp64\www\E-commerce\resources\views\dashboard\profile" />
       <recent name="C:\wamp64\www\E-commerce\resources\lang\en" />
       <recent name="C:\wamp64\www\E-commerce\resources\lang" />
       <recent name="C:\wamp64\www\E-commerce\resources\views\dashboard\layout" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\wamp64\www\E-commerce\app\Models" />
     </key>
   </component>
   <component name="RunManager">
@@ -214,7 +214,10 @@
       <workItem from="1598897325881" duration="4877000" />
       <workItem from="1598912410161" duration="51000" />
       <workItem from="1598980657162" duration="3658000" />
-      <workItem from="1599068717290" duration="17550000" />
+      <workItem from="1599068717290" duration="18222000" />
+      <workItem from="1599147058075" duration="10373000" />
+      <workItem from="1599159036593" duration="641000" />
+      <workItem from="1599236266671" duration="4880000" />
     </task>
     <servers />
   </component>
@@ -231,15 +234,16 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="413" y="124" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1598898596982">
+    <state x="413" y="124" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1599241157106">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
-    <state x="413" y="124" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.1366.738@0.0.1366.738" timestamp="1598898596982" />
+    <state x="413" y="124" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.1366.738@0.0.1366.738" timestamp="1599241157106" />
     <state x="463" y="124" key="FileChooserDialogImpl" timestamp="1598912464126">
       <screen x="0" y="0" width="1366" height="738" />
     </state>

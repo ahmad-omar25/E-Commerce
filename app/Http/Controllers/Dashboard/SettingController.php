@@ -6,6 +6,7 @@ use App\Http\Controllers\Controller;
 use App\Http\Requests\Dashboard\Shipping\Update;
 use App\Models\Setting;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\DB;
 
 class SettingController extends Controller
 {
@@ -27,16 +28,19 @@ class SettingController extends Controller
     public function updateShippingMethods(Update $request, $id) {
         try {
             $shipping = Setting::find($id);
+            DB::beginTransaction();
             // Update Plain value
             $shipping->update(['plain_value' => $request->input('plain_value')]);
             // Update Translation
             $shipping->value = $request->input('value');
             $shipping->save();
+            DB::commit();
             toast((__('dashboard.update_successfully')),'success');
             return redirect()->back();
         } catch (\Exception $exception) {
             toast((__('dashboard.error_message')),'error');
             return redirect()->back();
+            DB::rollback();
         }
 
     }

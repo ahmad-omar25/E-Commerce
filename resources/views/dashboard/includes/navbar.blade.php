@@ -22,14 +22,16 @@
                 <ul class="nav navbar-nav float-right">
                     <li class="dropdown dropdown-user nav-item">
                         <a class="dropdown-toggle nav-link dropdown-user-link" href="#" data-toggle="dropdown">
-                <span class="mr-1">Hello,
+                <span class="mr-1">{{__('dashboard.profile.hello')}}
                   <span class="user-name text-bold-700">{{auth()->guard('admin')->user()->name}}</span>
                 </span>
                             <span class="avatar avatar-online">
                   <img src="{{asset('dashboard/images/portrait/small/avatar-s-19.png')}}" alt="avatar"><i></i></span>
                         </a>
                         <div class="dropdown-menu dropdown-menu-right">
-                            <a class="dropdown-item" href="{{route('admin.logout')}}"><i class="ft-power"></i> Logout</a>
+                            <a class="dropdown-item" href="{{route('edit.profile')}}"><i class="ft-user"></i>{{__('dashboard.profile.edit_profile')}}</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="{{route('admin.logout')}}"><i class="ft-power"></i>{{__('dashboard.profile.logout')}}</a>
                         </div>
                     </li>
                     <li class="dropdown dropdown-language nav-item"><a class="dropdown-toggle nav-link" id="dropdown-flag" href="#" data-toggle="dropdown"
@@ -39,6 +41,7 @@
                                 <a class="dropdown-item" hreflang="{{ $localeCode }}" href="{{ LaravelLocalization::getLocalizedURL($localeCode, null, [], true) }}">
                                     {{ $properties['native'] }}
                                 </a>
+                                    <div class="dropdown-divider"></div>
                                 @endforeach
                             </div>
                         </li>
