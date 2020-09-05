@@ -21,9 +21,9 @@ class RegisterController extends Controller
     {
         try {
             Admin::create([
-                'name' => $request->name,
-                'email' => $request->email,
-                'password' => Hash::make($request->password),
+                'name' => $request->input('name'),
+                'email' => $request->input('email'),
+                'password' => bcrypt($request->input('password')),
             ]);
             toast((__('dashboard.created_successfully')),'success');
             return redirect()->route('admin.login');

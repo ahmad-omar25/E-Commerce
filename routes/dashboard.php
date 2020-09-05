@@ -42,6 +42,12 @@ Route::group(['prefix' => LaravelLocalization::setLocale(), 'middleware' => ['lo
             Route::put('shipping-methods/{id}', 'SettingController@updateShippingMethods')->name('shipping.update.methods');
         });
 
+        // Main Categories Routes
+        Route::resource('main_categories', 'MainCategoryController');
+
+        // SubCategories Routes
+        Route::resource('sub_categories', 'SubCategoryController');
+
         // Logout Route
         Route::any('logout', 'Auth\LoginController@logout')->name('admin.logout');
     });

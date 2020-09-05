@@ -16,6 +16,22 @@
                     </li>
                 </ul>
             </li>
+            <li class="nav-item has-sub"><a href="#"><i class="la la-navicon"></i><span class="menu-title" data-i18n="nav.navbars.main">{{__('dashboard.categories.title')}}</span><span class="badge badge badge-info badge-pill float-right mr-2">{{\App\Models\Category::parent()->count()}}</span></a>
+                <ul class="menu-content" style="">
+                    <li class=""><a class="menu-item" href="{{route('main_categories.index')}}" data-i18n="nav.navbars.nav_light">{{__('dashboard.categories.view_all')}}</a>
+                    </li>
+                    <li class=""><a class="menu-item" href="{{route('main_categories.create')}}" data-i18n="nav.navbars.nav_dark">{{__('dashboard.categories.create')}}</a>
+                    </li>
+                </ul>
+            </li>
+            <li class="nav-item has-sub"><a href="#"><i class="la la-navicon"></i><span class="menu-title" data-i18n="nav.navbars.main">{{__('dashboard.subCategories.title')}}</span><span class="badge badge badge-info badge-pill float-right mr-2">{{\App\Models\Category::child()->count()}}</span></a>
+                <ul class="menu-content" style="">
+                    <li class=""><a class="menu-item" href="{{route('sub_categories.index')}}" data-i18n="nav.navbars.nav_light">{{__('dashboard.subCategories.view_all')}}</a>
+                    </li>
+                    <li class=""><a class="menu-item" href="{{route('sub_categories.create')}}" data-i18n="nav.navbars.nav_dark">{{__('dashboard.subCategories.create')}}</a>
+                    </li>
+                </ul>
+            </li>
         </ul>
     </div>
 </div>

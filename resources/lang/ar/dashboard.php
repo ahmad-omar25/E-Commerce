@@ -16,6 +16,8 @@ return [
 
     // Global Messages
     'update_successfully' => 'تم التحديث بنجاح',
+    'create_successfully' => 'تم الانشاء بنجاح',
+    'delete_successfully' => 'تم الحذف بنجاح',
 
     // Auth
     'register_page' => 'تسجل مستخدم جديد',
@@ -63,5 +65,44 @@ return [
         'password' => 'كلمة المرور',
         'password_confirmation' => 'تاكيد كلمة المرور',
         'logout' => 'تسجيل خروج',
+    ],
+
+    // Categories
+    'categories' => [
+        'title' => 'الاقسام الرئيسية',
+        'view_all' => 'عرض الكل',
+        'create' => 'اضافة قسم جديد',
+        'edit' => 'تعديل قسم ',
+        'category_data' => 'بيانات القسم',
+        // Table
+        'name' => 'الاسم',
+        'name_url' => 'الاسم بالرابط',
+        'is_active' => 'الحالة',
+        'image' => 'صورة القسم',
+        'edit_image' => 'تعديل صورة القسم',
+        'actions' => 'اكشن',
+    ],
+
+    // Delete Button
+    'delete' => [
+        'name' => 'حذف',
+        'delete_data' => 'حذف البيانات',
+        'you_sure_delete' => 'هل انت متاكد من حذف',
+        'close' => 'اغلاق',
+        'ok_delete' => 'موافق',
+    ],
+    // Edit
+    'edit' => 'تعديل ',
+
+    // Active
+    'active' => 'مفعل',
+    'not_active' => 'غير مفعل',
+
+    // Sub Categories
+    'subCategories' => [
+        'edit' => 'تعديل قسم ',
+        'title' => 'الاقسام الفرعية',
+        'view_all' => 'عرض الكل',
+        'create' => 'اضافة قسم فرعي جديد',
     ],
 ];

@@ -1,5 +1,5 @@
 @extends('dashboard.layout.app')
-@section('title', (__('dashboard.settings.means_of_delivery')))
+@section('title', $shippingMethod -> value)
 @section('content')
     <div class="content-header row">
         <div class="content-header-left col-md-6 col-12 mb-2">
@@ -9,7 +9,7 @@
                     <ol class="breadcrumb">
                         <li class="breadcrumb-item"><a href="{{route('admin.dashboard')}}">{{__('dashboard.home')}}</a>
                         </li>
-                        <li class="breadcrumb-item active">{{__('dashboard.settings.means_of_delivery')}}</li>
+                        <li class="breadcrumb-item active">{{__('dashboard.edit') . $shippingMethod -> value}}</li>
                     </ol>
                 </div>
             </div>
@@ -23,7 +23,7 @@
                         <div class="card-header">
                             <h4 class="card-title" id="basic-layout-form">
                                 <i class="ft-check-circle"></i>
-                                {{__('dashboard.settings.edit_means_of_delivery')}}</h4>
+                                {{__('dashboard.edit') . $shippingMethod -> value}}</h4>
                             <a class="heading-elements-toggle"><i
                                     class="la la-ellipsis-v font-medium-3"></i></a>
                             <div class="heading-elements">
@@ -44,7 +44,7 @@
                                     <input type="hidden" name="id" value="{{$shippingMethod -> id}}">
                                     <div class="form-body">
                                         <div class="row">
-                                            <div class="col-md-6">
+                                            <div class="col-md-12">
                                                 <div class="form-group">
                                                     <label for="value">{{__('dashboard.settings.name_delivery')}}</label>
                                                     <input type="text" value="{{$shippingMethod -> value  }}" id="name"
@@ -56,7 +56,7 @@
                                                     @enderror
                                                 </div>
                                             </div>
-                                            <div class="col-md-6">
+                                            <div class="col-md-12">
                                                 <div class="form-group">
                                                     <label for="plain_value">{{__('dashboard.settings.price_delivery')}}</label>
                                                     <input value="{{number_format($shippingMethod -> plain_value, 2)}}"
