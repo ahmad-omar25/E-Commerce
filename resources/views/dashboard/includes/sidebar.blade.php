@@ -40,6 +40,14 @@
                     </li>
                 </ul>
             </li>
+            <li class="nav-item has-sub"><a href="#"><i class="la la-navicon"></i><span class="menu-title" data-i18n="nav.navbars.main">{{__('dashboard.tags.title')}}</span><span class="badge badge badge-info badge-pill float-right mr-2">{{\App\Models\Tag::count()}}</span></a>
+                <ul class="menu-content" style="">
+                    <li class=""><a class="menu-item" href="{{route('tags.index')}}" data-i18n="nav.navbars.nav_light">{{__('dashboard.tags.view_all')}}</a>
+                    </li>
+                    <li class=""><a class="menu-item" href="{{route('tags.create')}}" data-i18n="nav.navbars.nav_dark">{{__('dashboard.tags.create')}}</a>
+                    </li>
+                </ul>
+            </li>
         </ul>
     </div>
 </div>

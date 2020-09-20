@@ -101,6 +101,20 @@ return [
         'actions' => 'اكشن',
     ],
 
+    // Tags
+    'tags' => [
+        'title_singular' => 'العلامات',
+        'title' => 'العلامات',
+        'view_all' => 'عرض الكل',
+        'create' => 'اضافة علامة جديد',
+        'edit' => 'تعديل علامة ',
+        'brand_data' => 'بيانات العلامة التجارية',
+        // Table
+        'name' => 'الاسم',
+        'slug' => 'الاسم بالرابط',
+        'actions' => 'اكشن',
+    ],
+
     // Delete Button
     'delete' => [
         'name' => 'حذف',
