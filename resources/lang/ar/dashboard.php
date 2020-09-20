@@ -69,17 +69,35 @@ return [
 
     // Categories
     'categories' => [
+        'title_singular' => 'القسم الرئيسية',
         'title' => 'الاقسام الرئيسية',
         'view_all' => 'عرض الكل',
         'create' => 'اضافة قسم جديد',
         'edit' => 'تعديل قسم ',
-        'category_data' => 'بيانات القسم',
+        'category_data' => 'بيانات القسم الرئيسي',
         // Table
         'name' => 'الاسم',
         'name_url' => 'الاسم بالرابط',
         'is_active' => 'الحالة',
-        'image' => 'صورة القسم',
-        'edit_image' => 'تعديل صورة القسم',
+        'add_image' => 'اضافة صورة',
+        'edit_image' => 'تعديل الصورة',
+        'actions' => 'اكشن',
+    ],
+
+    // Brands
+    'brands' => [
+        'title_singular' => 'الماركة',
+        'title' => 'الماركات',
+        'view_all' => 'عرض الكل',
+        'create' => 'اضافة ماركة جديد',
+        'edit' => 'تعديل ماركة ',
+        'brand_data' => 'بيانات الماركة التجارية',
+        // Table
+        'name' => 'الاسم',
+        'add_image' => 'اضافة صورة',
+        'brand_image' => 'صورة الماركة',
+        'edit_image' => 'تعديل صورة',
+        'is_active' => 'الحالة',
         'actions' => 'اكشن',
     ],
 
@@ -95,6 +113,7 @@ return [
     'edit' => 'تعديل ',
 
     // Active
+    'status' => 'الحالة',
     'active' => 'مفعل',
     'not_active' => 'غير مفعل',
 
@@ -104,5 +123,12 @@ return [
         'title' => 'الاقسام الفرعية',
         'view_all' => 'عرض الكل',
         'create' => 'اضافة قسم فرعي جديد',
+        'subCategory_data' => 'بيانات القسم الفرعي',
+        // Table
+        'name' => 'الاسم',
+        'add_image' => 'اضافة صورة',
+        'edit_image' => 'تعديل صورة',
+        'is_active' => 'الحالة',
+        'actions' => 'اكشن',
     ],
 ];

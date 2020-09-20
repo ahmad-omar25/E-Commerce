@@ -47,7 +47,7 @@ class SubCategoryController extends Controller
             toast((__('dashboard.error_message')), 'error');
             return redirect()->route('sub_categories.index');
         }
-        $categories = Category::child()->orderBy('id', 'DESC')->get();
+        $categories = Category::parent()->orderBy('id', 'DESC')->get();
         return view('dashboard.subCategories.edit', compact('category', 'categories'));
     }
 
@@ -59,10 +59,10 @@ class SubCategoryController extends Controller
                 toast((__('dashboard.error_message')), 'error');
                 return redirect()->route('sub_categories.index');
             }
-            if (!$request->has('is_active'))
-                $request->request->add(['is_active' => 0]);
-            else
+            if ($request->has('is_active'))
                 $request->request->add(['is_active' => 1]);
+            else
+                $request->request->add(['is_active' => 0]);
             $category->update($request->all());
             toast((__('dashboard.update_successfully')), 'success');
             return redirect()->route('sub_categories.index');
@@ -84,6 +84,7 @@ class SubCategoryController extends Controller
                 toast((__('dashboard.error_message')), 'error');
                 return redirect()->route('sub_categories.index');
             }
+            $category->translations()->delete();
             $category->delete();
             toast((__('dashboard.delete_successfully')), 'success');
             return redirect()->route('sub_categories.index');

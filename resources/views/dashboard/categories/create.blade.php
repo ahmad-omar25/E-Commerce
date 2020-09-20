@@ -42,15 +42,8 @@
                                     <div class="form-body">
                                         <div class="row">
                                             <div class="form-group col-12 mb-2">
-                                               <div class="text-center">
-                                                   <img src="" class="rounded-circle height-150" alt="{{__('dashboard.categories.image')}}">
-                                               </div>
-                                            </div>
-                                        </div>
-                                        <div class="row">
-                                            <div class="form-group col-12 mb-2">
                                                 @php $input = "image" @endphp
-                                                <label>{{__('dashboard.categories.edit_image')}}</label>
+                                                <label>{{__('dashboard.categories.add_image')}}</label>
                                                 <label id="{{$input}}" class="file center-block">
                                                     <input type="file" value="{{(old($input))}}" name="{{$input}}" id="file">
                                                     <span class="file-custom"></span>

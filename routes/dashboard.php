@@ -46,6 +46,9 @@ Route::group(['prefix' => LaravelLocalization::setLocale(), 'middleware' => ['lo
         Route::resource('main_categories', 'MainCategoryController');
 
         // SubCategories Routes
+        Route::resource('brands', 'BrandController');
+
+        // Brands Routes
         Route::resource('sub_categories', 'SubCategoryController');
 
         // Logout Route

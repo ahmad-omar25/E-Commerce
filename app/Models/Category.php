@@ -21,9 +21,14 @@ class Category extends Model
         'is_active' => 'boolean',
     ];
 
-    //
+    // Category Name = null
     public function scopeParent($q) {
         return $q->whereNull('parent_id');
+    }
+
+    // Get Category Name
+    public function _parent() {
+        return $this->belongsTo(self::class, 'parent_id');
     }
 
     // Get Sub Categories

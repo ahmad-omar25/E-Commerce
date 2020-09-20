@@ -85,6 +85,7 @@ class MainCategoryController extends Controller
                 toast((__('dashboard.error_message')), 'error');
                 return redirect()->route('main_categories.index');
             }
+            $category->translations()->delete();
             $category->delete();
             toast((__('dashboard.delete_successfully')), 'success');
             return redirect()->route('main_categories.index');

@@ -18,6 +18,7 @@
     <link rel="stylesheet" type="text/css" href="{{asset('dashboard/vendors/css/charts/chartist.css')}}">
     <link rel="stylesheet" type="text/css" href="{{asset('dashboard/vendors/css/charts/chartist-plugin-tooltip.css')}}">
     <link rel="stylesheet" type="text/css" href="{{asset('dashboard/fonts/simple-line-icons/style.css')}}">
+    @yield('style')
     @if(app()->getLocale() == 'ar')
         <link rel="stylesheet" type="text/css" href="{{asset('dashboard/css-rtl/vendors.css')}}">
         <link rel="stylesheet" type="text/css" href="{{asset('dashboard/css-rtl/app.css')}}">
@@ -61,5 +62,6 @@
 </div>
 @include('dashboard.includes.footer')
 @include('dashboard.includes.scripts')
+@yield('script')
 </body>
 </html>

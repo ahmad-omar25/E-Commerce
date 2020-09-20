@@ -32,6 +32,14 @@
                     </li>
                 </ul>
             </li>
+            <li class="nav-item has-sub"><a href="#"><i class="la la-navicon"></i><span class="menu-title" data-i18n="nav.navbars.main">{{__('dashboard.brands.title')}}</span><span class="badge badge badge-info badge-pill float-right mr-2">{{\App\Models\Brand::count()}}</span></a>
+                <ul class="menu-content" style="">
+                    <li class=""><a class="menu-item" href="{{route('brands.index')}}" data-i18n="nav.navbars.nav_light">{{__('dashboard.brands.view_all')}}</a>
+                    </li>
+                    <li class=""><a class="menu-item" href="{{route('brands.create')}}" data-i18n="nav.navbars.nav_dark">{{__('dashboard.brands.create')}}</a>
+                    </li>
+                </ul>
+            </li>
         </ul>
     </div>
 </div>

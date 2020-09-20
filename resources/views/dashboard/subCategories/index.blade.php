@@ -28,7 +28,7 @@
                         <div class="card-header">
                             <h4 class="card-title" id="basic-layout-form">
                                 <i class="ft-user"></i>
-                                {{__('dashboard.categories.title')}}</h4>
+                                {{__('dashboard.subCategories.title')}}</h4>
                             <a class="heading-elements-toggle"><i
                                     class="la la-ellipsis-v font-medium-3"></i></a>
                             <div class="heading-elements">
@@ -40,6 +40,7 @@
                                 </ul>
                             </div>
                         </div>
+                        <section id="dom">
                         <div class="card-content collapse show">
                             <div class="card-body">
                                 <div class="card-content collapse show">
@@ -48,6 +49,7 @@
                                             <thead class="bg-success white">
                                             <tr>
                                                 <th>#</th>
+                                                <th>{{__('dashboard.categories.title_singular')}}</th>
                                                 <th>{{__('dashboard.categories.name')}}</th>
                                                 <th>{{__('dashboard.categories.name_url')}}</th>
                                                 <th>{{__('dashboard.categories.is_active')}}</th>
@@ -59,6 +61,7 @@
                                             @foreach($categories as $index=>$category)
                                                 <tr>
                                                     <td>{{$index + 1}}</td>
+                                                    <td>{{$category->_parent->name}}</td>
                                                     <td>{{$category->name}}</td>
                                                     <td>{{$category->slug}}</td>
                                                     <td>{{$category->getActive()}}</td>
@@ -105,6 +108,7 @@
                                 </div>
                             </div>
                         </div>
+                        </section>
                     </div>
                 </div>
             </div>
