@@ -12,12 +12,6 @@ use Illuminate\Support\Facades\Validator;
 
 class RegisterController extends Controller
 {
-    public function __construct()
-    {
-        $this->middleware('guest');
-        $this->middleware('guest:admin');
-    }
-
     public function showAdminRegisterForm()
     {
         return view('dashboard.auth.register');
@@ -27,9 +21,9 @@ class RegisterController extends Controller
     {
         try {
             Admin::create([
-                'name' => $request->name,
-                'email' => $request->email,
-                'password' => Hash::make($request->password),
+                'name' => $request->input('name'),
+                'email' => $request->input('email'),
+                'password' => bcrypt($request->input('password')),
             ]);
             toast((__('dashboard.created_successfully')),'success');
             return redirect()->route('admin.login');

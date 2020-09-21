@@ -1,15 +1,48 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
   <component name="ChangeListManager">
-    <list default="true" id="fe1aae20-efbc-4116-bf1c-4bbbb6c649bb" name="Default Changelist" comment="" />
+    <list default="true" id="fe1aae20-efbc-4116-bf1c-4bbbb6c649bb" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/Dashboard/TagController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Models/Tag.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Models/TagTranslation.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/database/migrations/2020_09_20_014700_create_tags_table.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/database/migrations/2020_09_20_014931_create_tag_translations_table.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/dashboard/tags/create.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/dashboard/tags/edit.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/dashboard/tags/index.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/lang/ar/dashboard.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/lang/ar/dashboard.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/dashboard/includes/sidebar.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/dashboard/includes/sidebar.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/dashboard.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/dashboard.php" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="ComposerSettings" synchronizationState="SYNCHRONIZE">
+  <component name="ComposerSettings" doNotAsk="true" synchronizationState="SYNCHRONIZE">
     <pharConfigPath>$PROJECT_DIR$/composer.json</pharConfigPath>
-    <execution />
+    <execution>
+      <executable path="composer" />
+    </execution>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -17,6 +50,9 @@
         <option value="composer.json" />
       </list>
     </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="PhpWorkspaceProjectConfiguration">
     <include_path>
@@ -126,24 +162,35 @@
       <path value="$PROJECT_DIR$/vendor/nikic/php-parser" />
       <path value="$PROJECT_DIR$/vendor/astrotomic/laravel-translatable" />
       <path value="$PROJECT_DIR$/vendor/mcamara/laravel-localization" />
+      <path value="$PROJECT_DIR$/vendor/cviebrock/eloquent-sluggable" />
+      <path value="$PROJECT_DIR$/vendor/cocur/slugify" />
     </include_path>
   </component>
   <component name="ProjectId" id="1gsJMMQlp7Qc3lQuarSqyjZhZOQ" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/resources/views/dashboard/layout" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/resources/views/dashboard" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\wamp64\www\E-commerce\resources\views\dashboard\layout" />
+      <recent name="C:\wamp64\www\E-commerce\resources\views\dashboard" />
+      <recent name="C:\wamp64\www\E-commerce\app\Helpers" />
+      <recent name="C:\wamp64\www\E-commerce\app\Http\Requests\Dashboard" />
+      <recent name="C:\wamp64\www\E-commerce\database\seeds" />
+      <recent name="C:\wamp64\www\E-commerce\resources\views\dashboard\categories" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\wamp64\www\E-commerce\public\assets\dashboard" />
       <recent name="C:\wamp64\www\E-commerce\app\Models" />
     </key>
   </component>
@@ -161,17 +208,71 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1598897322684</updated>
-      <workItem from="1598897325881" duration="1825000" />
+      <workItem from="1598897325881" duration="4877000" />
+      <workItem from="1598912410161" duration="51000" />
+      <workItem from="1598980657162" duration="3658000" />
+      <workItem from="1599068717290" duration="18222000" />
+      <workItem from="1599147058075" duration="10373000" />
+      <workItem from="1599159036593" duration="641000" />
+      <workItem from="1599236266671" duration="16828000" />
+      <workItem from="1599321523071" duration="14642000" />
+      <workItem from="1599440367030" duration="414000" />
+      <workItem from="1600251586948" duration="17704000" />
+      <workItem from="1600476217720" duration="74000" />
+      <workItem from="1600559648241" duration="8993000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+  </component>
   <component name="WindowStateProjectService">
-    <state x="413" y="124" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1598898596982">
+    <state x="413" y="124" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1600568206770">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
-    <state x="413" y="124" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.1366.738@0.0.1366.738" timestamp="1598898596982" />
+    <state x="413" y="124" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.1366.738@0.0.1366.738" timestamp="1600568206770" />
+    <state x="458" y="283" width="450" height="272" key="ComposerInitDialogKey" timestamp="1600253812449">
+      <screen x="0" y="0" width="1366" height="738" />
+    </state>
+    <state x="458" y="283" width="450" height="272" key="ComposerInitDialogKey/0.0.1366.738@0.0.1366.738" timestamp="1600253812449" />
+    <state x="532" y="278" key="Create Controller" timestamp="1600567063369">
+      <screen x="0" y="0" width="1366" height="738" />
+    </state>
+    <state x="532" y="278" key="Create Controller/0.0.1366.738@0.0.1366.738" timestamp="1600567063369" />
+    <state x="543" y="278" key="Create Form Request" timestamp="1600563902663">
+      <screen x="0" y="0" width="1366" height="738" />
+    </state>
+    <state x="543" y="278" key="Create Form Request/0.0.1366.738@0.0.1366.738" timestamp="1600563902663" />
+    <state x="463" y="124" key="FileChooserDialogImpl" timestamp="1600476302369">
+      <screen x="0" y="0" width="1366" height="738" />
+    </state>
+    <state x="463" y="124" key="FileChooserDialogImpl/0.0.1366.738@0.0.1366.738" timestamp="1600476302369" />
+    <state x="490" y="76" key="NewPhpClassDialog" timestamp="1599077577866">
+      <screen x="0" y="0" width="1366" height="738" />
+    </state>
+    <state x="490" y="76" key="NewPhpClassDialog/0.0.1366.738@0.0.1366.738" timestamp="1599077577866" />
+    <state x="339" y="165" key="run.anything.popup" timestamp="1599242895853">
+      <screen x="0" y="0" width="1366" height="738" />
+    </state>
+    <state x="339" y="165" key="run.anything.popup/0.0.1366.738@0.0.1366.738" timestamp="1599242895853" />
+    <state x="346" y="59" key="search.everywhere.popup" timestamp="1600266444416">
+      <screen x="0" y="0" width="1366" height="738" />
+    </state>
+    <state x="346" y="59" key="search.everywhere.popup/0.0.1366.738@0.0.1366.738" timestamp="1600266444416" />
   </component>
 </project>
