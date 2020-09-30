@@ -3,9 +3,9 @@
 namespace App\Http\Controllers\Dashboard;
 
 use App\Http\Controllers\Controller;
+use App\Http\Enumerations\CategoryType;
 use App\Http\Requests\Dashboard\MainCategory\Update;
 use App\Models\Category;
-use Illuminate\Http\Request;
 use Illuminate\Support\Facades\DB;
 
 class MainCategoryController extends Controller
@@ -19,7 +19,8 @@ class MainCategoryController extends Controller
 
     public function create()
     {
-        return view('dashboard.categories.create');
+        $categories = Category::select('id', 'parent_id')->get();
+        return view('dashboard.categories.create', compact('categories'));
     }
 
     public function store(Update $request)
@@ -31,11 +32,15 @@ class MainCategoryController extends Controller
                 $request->request->add(['is_active' => 0]);
             else
                 $request->request->add(['is_active' => 1]);
-            $category = Category::create($request->except('_token'));
+
+            if ($request->type == CategoryType::mainCategory) {
+                $request->request->add(['parent_id' => null]);
+            }
+            Category::create($request->except('_token'));
             DB::commit();
             toast((__('dashboard.create_successfully')), 'success');
             return redirect()->route('main_categories.index');
-        } catch (\Exception $ex) {
+        } catch (\Exception $exception) {
             DB::rollback();
             toast((__('dashboard.error_message')), 'error');
             return redirect()->route('main_categories.index');
@@ -67,7 +72,7 @@ class MainCategoryController extends Controller
             $category->update($request->all());
             toast((__('dashboard.update_successfully')), 'success');
             return redirect()->route('main_categories.index');
-        } catch (\Exception $ex) {
+        } catch (\Exception $exception) {
 
             toast((__('dashboard.error_message')), 'error');
             return redirect()->route('main_categories.index');
@@ -90,7 +95,7 @@ class MainCategoryController extends Controller
             toast((__('dashboard.delete_successfully')), 'success');
             return redirect()->route('main_categories.index');
 
-        } catch (\Exception $ex) {
+        } catch (\Exception $exception) {
             toast((__('dashboard.error_message')), 'error');
             return redirect()->route('main_categories.index');
         }
