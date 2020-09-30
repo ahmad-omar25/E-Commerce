@@ -80,6 +80,47 @@
                                             </div>
                                         </div>
                                         <div class="row">
+                                            <div class="col-md-6">
+                                                <div class="form-group">
+                                                    <div class="input-group">
+                                                        <div class="d-inline-block custom-control custom-radio mr-1">
+                                                            <input type="radio" name="type" checked value="1" class="switchery" data-color="success" id="1">
+                                                            <label class="card-title ml-1" for="1">قسم رئيسي</label>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-6">
+                                                <div class="form-group">
+                                                    <div class="input-group">
+                                                        <div class="d-inline-block custom-control custom-radio mr-1">
+                                                            <input type="radio" name="type" value="2" class="switchery" data-color="success" id="2">
+                                                            <label class="card-title ml-1" for="2">قسم فرعي</label>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="row hidden" id="cats_list" >
+                                            <div class="col-md-12">
+                                                <div class="form-group">
+                                                    <label for="projectinput1"> اختر القسم الرئيسي</label>
+                                                    <select name="parent_id" class="select2 form-control">
+                                                        <optgroup label="من فضلك أختر القسم ">
+                                                            @if($categories && $categories -> count() > 0)
+                                                                @foreach($categories as $category)
+                                                                    <option  value="{{$category -> id }}">{{$category -> name}}</option>
+                                                                @endforeach
+                                                            @endif
+                                                        </optgroup>
+                                                    </select>
+                                                    @error('parent_id')
+                                                    <span class="text-danger"> {{$message}}</span>
+                                                    @enderror
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="row">
                                             <div class="col-md-12">
                                                 <div class="form-group mt-1">
                                                     <input type="checkbox" value="1" name="is_active" id="" class="" data-color="success"/>
@@ -107,3 +148,16 @@
     </div>
     @include('sweetalert::alert')
 @endsection
+@section('script')
+
+    <script>
+        $('input:radio[name="type"]').change(
+            function(){
+                if (this.checked && this.value == '2') {  // 1 if main cat - 2 if sub cat
+                    $('#cats_list').removeClass('hidden');
+                }else{
+                    $('#cats_list').addClass('hidden');
+                }
+            });
+    </script>
+@stop

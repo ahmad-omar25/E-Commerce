@@ -103,7 +103,7 @@ return [
 
     // Tags
     'tags' => [
-        'title_singular' => 'العلامات',
+        'title_singular' => 'العلامة',
         'title' => 'العلامات',
         'view_all' => 'عرض الكل',
         'create' => 'اضافة علامة جديد',
@@ -111,6 +111,25 @@ return [
         'brand_data' => 'بيانات العلامة التجارية',
         // Table
         'name' => 'الاسم',
+        'slug' => 'الاسم بالرابط',
+        'actions' => 'اكشن',
+    ],
+
+    // Products
+    'products' => [
+        'title_singular' => 'المنتج',
+        'title' => 'المنتجات',
+        'view_all' => 'عرض الكل',
+        'create' => 'اضافة منتج جديد',
+        'edit' => 'تعديل المنتج ',
+        'brand_data' => 'بيانات المنتج',
+        // Table
+        'name' => 'اسم المنتج',
+        'description' => 'وصف المنتج',
+        'short_description' => 'الوصف المختصر للمنتج ( اختياري )',
+        'categories' => 'اختر الاقسام',
+        'tag' => 'اختر العلامة التجارية',
+        'brand' => 'اختر الماركة',
         'slug' => 'الاسم بالرابط',
         'actions' => 'اكشن',
     ],
