@@ -20,17 +20,37 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="fe1aae20-efbc-4116-bf1c-4bbbb6c649bb" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/Dashboard/TagController.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Models/Tag.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Models/TagTranslation.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/database/migrations/2020_09_20_014700_create_tags_table.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/database/migrations/2020_09_20_014931_create_tag_translations_table.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/dashboard/tags/create.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/dashboard/tags/edit.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/dashboard/tags/index.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/Dashboard/ProductController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Http/Enumerations/CategoryType.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Http/Interfaces/RepositoryInterface.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Http/Requests/Dashboard/Product/Store.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Models/Product.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Models/ProductTranslation.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Repositories/Repository.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/database/factories/ProductFactory.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/database/migrations/2020_09_21_095306_create_products_table.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/database/migrations/2020_09_21_095416_create_product_translations_table.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/database/migrations/2020_09_30_080310_create_product_images_table.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/database/seeds/ProductSeeder.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/dashboard/images/brands/3pfbfbQeNHWfrXhUtlGMRQzohtOQHSBbSJmiwrka.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/dashboard/products/create.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/dashboard/products/edit.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/dashboard/products/index.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/E-commerce.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/E-commerce.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Dashboard/MainCategoryController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Dashboard/MainCategoryController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Requests/Dashboard/MainCategory/Update.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Requests/Dashboard/MainCategory/Update.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/seeds/CategorySeeder.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/seeds/CategorySeeder.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/seeds/DatabaseSeeder.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/seeds/DatabaseSeeder.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/seeds/SubCategorySeeder.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/seeds/SubCategorySeeder.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/lang/ar/dashboard.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/lang/ar/dashboard.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/dashboard/categories/create.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/dashboard/categories/create.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/dashboard/includes/scripts.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/dashboard/includes/scripts.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/dashboard/includes/sidebar.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/dashboard/includes/sidebar.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/dashboard/layout/app.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/dashboard/layout/app.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/routes/dashboard.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/dashboard.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -164,6 +184,8 @@
       <path value="$PROJECT_DIR$/vendor/mcamara/laravel-localization" />
       <path value="$PROJECT_DIR$/vendor/cviebrock/eloquent-sluggable" />
       <path value="$PROJECT_DIR$/vendor/cocur/slugify" />
+      <path value="$PROJECT_DIR$/vendor/spatie/laravel-enum" />
+      <path value="$PROJECT_DIR$/vendor/spatie/enum" />
     </include_path>
   </component>
   <component name="ProjectId" id="1gsJMMQlp7Qc3lQuarSqyjZhZOQ" />
@@ -179,15 +201,16 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/resources/views/dashboard" />
+    <property name="nodejs_package_manager_path" value="npm" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\wamp64\www\E-commerce\resources\views\dashboard" />
+      <recent name="C:\wamp64\www\E-commerce\database\seeds" />
+      <recent name="C:\wamp64\www\E-commerce\database\factories" />
       <recent name="C:\wamp64\www\E-commerce\app\Helpers" />
       <recent name="C:\wamp64\www\E-commerce\app\Http\Requests\Dashboard" />
-      <recent name="C:\wamp64\www\E-commerce\database\seeds" />
-      <recent name="C:\wamp64\www\E-commerce\resources\views\dashboard\categories" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\wamp64\www\E-commerce\public\assets\dashboard" />
@@ -219,7 +242,10 @@
       <workItem from="1599440367030" duration="414000" />
       <workItem from="1600251586948" duration="17704000" />
       <workItem from="1600476217720" duration="74000" />
-      <workItem from="1600559648241" duration="8993000" />
+      <workItem from="1600559648241" duration="12843000" />
+      <workItem from="1600678694621" duration="6395000" />
+      <workItem from="1601450664979" duration="9705000" />
+      <workItem from="1601468801256" duration="2254000" />
     </task>
     <servers />
   </component>
@@ -242,37 +268,45 @@
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="413" y="124" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1600568206770">
+    <state x="309" y="47" key="#Inspections" timestamp="1600574022610">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
-    <state x="413" y="124" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.1366.738@0.0.1366.738" timestamp="1600568206770" />
+    <state x="309" y="47" key="#Inspections/0.0.1366.738@0.0.1366.738" timestamp="1600574022610" />
+    <state x="430" y="159" key="#com.intellij.ide.util.TreeClassChooserDialog" timestamp="1600681209110">
+      <screen x="0" y="0" width="1366" height="738" />
+    </state>
+    <state x="430" y="159" key="#com.intellij.ide.util.TreeClassChooserDialog/0.0.1366.738@0.0.1366.738" timestamp="1600681209110" />
+    <state x="413" y="124" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1600680622907">
+      <screen x="0" y="0" width="1366" height="738" />
+    </state>
+    <state x="413" y="124" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.1366.738@0.0.1366.738" timestamp="1600680622907" />
     <state x="458" y="283" width="450" height="272" key="ComposerInitDialogKey" timestamp="1600253812449">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
     <state x="458" y="283" width="450" height="272" key="ComposerInitDialogKey/0.0.1366.738@0.0.1366.738" timestamp="1600253812449" />
-    <state x="532" y="278" key="Create Controller" timestamp="1600567063369">
+    <state x="532" y="278" key="Create Controller" timestamp="1601453477882">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
-    <state x="532" y="278" key="Create Controller/0.0.1366.738@0.0.1366.738" timestamp="1600567063369" />
-    <state x="543" y="278" key="Create Form Request" timestamp="1600563902663">
+    <state x="532" y="278" key="Create Controller/0.0.1366.738@0.0.1366.738" timestamp="1601453477882" />
+    <state x="543" y="278" key="Create Form Request" timestamp="1601473005572">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
-    <state x="543" y="278" key="Create Form Request/0.0.1366.738@0.0.1366.738" timestamp="1600563902663" />
-    <state x="463" y="124" key="FileChooserDialogImpl" timestamp="1600476302369">
+    <state x="543" y="278" key="Create Form Request/0.0.1366.738@0.0.1366.738" timestamp="1601473005572" />
+    <state x="463" y="124" key="FileChooserDialogImpl" timestamp="1600685161268">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
-    <state x="463" y="124" key="FileChooserDialogImpl/0.0.1366.738@0.0.1366.738" timestamp="1600476302369" />
-    <state x="490" y="76" key="NewPhpClassDialog" timestamp="1599077577866">
+    <state x="463" y="124" key="FileChooserDialogImpl/0.0.1366.738@0.0.1366.738" timestamp="1600685161268" />
+    <state x="490" y="76" key="NewPhpClassDialog" timestamp="1600681232813">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
-    <state x="490" y="76" key="NewPhpClassDialog/0.0.1366.738@0.0.1366.738" timestamp="1599077577866" />
+    <state x="490" y="76" key="NewPhpClassDialog/0.0.1366.738@0.0.1366.738" timestamp="1600681232813" />
     <state x="339" y="165" key="run.anything.popup" timestamp="1599242895853">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
     <state x="339" y="165" key="run.anything.popup/0.0.1366.738@0.0.1366.738" timestamp="1599242895853" />
-    <state x="346" y="59" key="search.everywhere.popup" timestamp="1600266444416">
+    <state x="346" y="59" width="672" height="678" key="search.everywhere.popup" timestamp="1600683555523">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
-    <state x="346" y="59" key="search.everywhere.popup/0.0.1366.738@0.0.1366.738" timestamp="1600266444416" />
+    <state x="346" y="59" width="672" height="678" key="search.everywhere.popup/0.0.1366.738@0.0.1366.738" timestamp="1600683555523" />
   </component>
 </project>

@@ -54,6 +54,9 @@ Route::group(['prefix' => LaravelLocalization::setLocale(), 'middleware' => ['lo
         // Tags Routes
         Route::resource('tags', 'TagController');
 
+        // Products Routes
+        Route::resource('products', 'ProductController');
+
         // Logout Route
         Route::any('logout', 'Auth\LoginController@logout')->name('admin.logout');
     });

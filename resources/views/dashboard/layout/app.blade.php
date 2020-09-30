@@ -18,6 +18,7 @@
     <link rel="stylesheet" type="text/css" href="{{asset('dashboard/vendors/css/charts/chartist.css')}}">
     <link rel="stylesheet" type="text/css" href="{{asset('dashboard/vendors/css/charts/chartist-plugin-tooltip.css')}}">
     <link rel="stylesheet" type="text/css" href="{{asset('dashboard/fonts/simple-line-icons/style.css')}}">
+    <link rel="stylesheet" type="text/css" href="{{asset('dashboard/vendors/css/forms/selects/select2.min.css')}}">
     @yield('style')
     @if(app()->getLocale() == 'ar')
         <link rel="stylesheet" type="text/css" href="{{asset('dashboard/css-rtl/vendors.css')}}">
@@ -30,6 +31,12 @@
         <link rel="stylesheet" type="text/css" href="{{asset('dashboard/css-rtl/pages/dashboard-ecommerce.css')}}">
         <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@600&display=swap" rel="stylesheet">
         <link rel="stylesheet" type="text/css" href="{{asset('dashboard/css-rtl/style-rtl.css')}}">
+
+
+        <link rel="stylesheet" type="text/css" href="{{asset('dashboard/css-rtl/core/menu/menu-types/vertical-menu.css')}}">
+        <link rel="stylesheet" type="text/css" href="{{asset('dashboard/css-rtl/core/colors/palette-gradient.css')}}">
+        <link rel="stylesheet" type="text/css" href="{{asset('dashboard/css-rtl/plugins/forms/wizard.css')}}">
+        <link rel="stylesheet" type="text/css" href="{{asset('dashboard/css-rtl/plugins/pickers/daterange/daterange.css')}}">
         <style>
             body, h1, h2, h3, h4, h5, h6, li {
                 font-family: 'Cairo', sans-serif;
