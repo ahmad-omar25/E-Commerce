@@ -16,4 +16,9 @@ class Tag extends Model
     protected $guarded = [];
 
     protected $hidden = ['translations'];
+
+    public function products()
+    {
+        return $this->belongsToMany(Tag::class, 'product_tags');
+    }
 }

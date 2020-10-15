@@ -31,6 +31,11 @@ class Category extends Model
         return $this->belongsTo(self::class, 'parent_id');
     }
 
+    public function products()
+    {
+        return $this->belongsToMany(Product::class, 'product_categories');
+    }
+
     // Get Sub Categories
     public function scopeChild($q) {
         return $q->whereNotNull('parent_id');

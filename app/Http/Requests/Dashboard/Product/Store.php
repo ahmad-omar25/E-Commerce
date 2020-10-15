@@ -15,9 +15,9 @@ class Store extends FormRequest
             'slug' => 'required|unique:products,slug,' .$this->id,
             'categories' => 'required|array|min:1',
             'categories.*' => 'numeric|exists:categories,id',
-            'tags' => 'array|min:1',
+            'tags' => 'required|array|min:1',
             'brand_id' => 'required',
-            'tags.*' => 'numeric|exists:categories,id'
+            'tags.*' => 'numeric|exists:tags,id'
         ];
     }
 
