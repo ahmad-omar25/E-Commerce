@@ -48,4 +48,9 @@ class Product extends Model
     {
         return $this->belongsToMany(Tag::class, 'product_tags');
     }
+
+    // Get Active
+    public function getActive() {
+        return $this->is_active == 0 ? (__('dashboard.not_active')) : (__('dashboard.active'));
+    }
 }

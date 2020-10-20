@@ -33,11 +33,6 @@
 <!-- BEGIN PAGE LEVEL JS-->
 <script src="{{asset('dashboard/js/scripts/pages/dashboard-crypto.js')}}" type="text/javascript"></script>
 
-{{--//--}}
-{{--<script src="{{asset('dashboard/vendors/js/forms/select/select2.full.min.js')}}" type="text/javascript"></script>--}}
-{{--<script src="{{asset('dashboard/js/scripts/forms/select/form-select2.js')}}" type="text/javascript"></script>--}}
-
-
 <script src="{{asset('dashboard/js/scripts/tables/datatables/datatable-basic.js')}}"
         type="text/javascript"></script>
 <script src="{{asset('dashboard/js/scripts/extensions/date-time-dropper.js')}}" type="text/javascript"></script>

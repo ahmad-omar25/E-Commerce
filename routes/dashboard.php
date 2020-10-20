@@ -56,6 +56,12 @@ Route::group(['prefix' => LaravelLocalization::setLocale(), 'middleware' => ['lo
 
         // Products Routes
         Route::resource('products', 'ProductController');
+        // Product Price
+        Route::get('price/{id}', 'ProductController@getPrice')->name('admin.product.price');
+        Route::post('price', 'ProductController@storePrice')->name('admin.product.price.store');
+        // Product Stock
+        Route::get('stock/{id}', 'ProductController@getStock')->name('admin.product.stock');
+        Route::post('stock', 'ProductController@storeStock')->name('admin.product.stock.store');
 
         // Logout Route
         Route::any('logout', 'Auth\LoginController@logout')->name('admin.logout');

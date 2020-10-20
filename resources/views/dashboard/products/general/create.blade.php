@@ -164,10 +164,4 @@
     </div>
     @include('sweetalert::alert')
 @endsection
-@section('script')
-    <script src="{{asset('dashboard/vendors/js/extensions/jquery.steps.min.js')}}" type="text/javascript"></script>
-    <script src="{{asset('dashboard/vendors/js/pickers/dateTime/moment-with-locales.min.js')}}" type="text/javascript"></script>
-    <script src="{{asset('dashboard/vendors/js/pickers/daterange/daterangepicker.js')}}" type="text/javascript"></script>
-    <script src="{{asset('dashboard/vendors/js/forms/validation/jquery.validate.min.js')}}" type="text/javascript"></script>
-    <script src="{{asset('dashboard/js/scripts/forms/wizard-steps.js')}}" type="text/javascript"></script>
-@endsection
+

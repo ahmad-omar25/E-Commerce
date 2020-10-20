@@ -20,13 +20,19 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="fe1aae20-efbc-4116-bf1c-4bbbb6c649bb" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/database/migrations/2020_09_30_161820_create_product_categories_table.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/database/migrations/2020_09_30_162652_create_product_tags_table.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Http/Requests/Dashboard/Product/Price.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Http/Requests/Dashboard/Product/Stock.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/dashboard/products/prices/create.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/dashboard/products/stock/create.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Dashboard/ProductController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Dashboard/ProductController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Requests/Dashboard/Product/Store.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Requests/Dashboard/Product/Store.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Models/Category.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/Category.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Models/Tag.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/Tag.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Models/Product.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/Product.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/lang/ar/dashboard.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/lang/ar/dashboard.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/dashboard/includes/scripts.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/dashboard/includes/scripts.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/dashboard/layout/app.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/dashboard/layout/app.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/dashboard/products/create.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/dashboard/products/general/create.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/dashboard/products/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/dashboard/products/general/index.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/dashboard.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/dashboard.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -175,21 +181,22 @@
     <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../Invoices" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/app/Http/Requests/Dashboard/Product" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\wamp64\www\E-commerce\resources\views\dashboard" />
-      <recent name="C:\wamp64\www\E-commerce\database\seeds" />
-      <recent name="C:\wamp64\www\E-commerce\database\factories" />
-      <recent name="C:\wamp64\www\E-commerce\app\Helpers" />
-      <recent name="C:\wamp64\www\E-commerce\app\Http\Requests\Dashboard" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\wamp64\www\E-commerce\resources\views\dashboard\products\general" />
       <recent name="C:\wamp64\www\E-commerce\public\assets\dashboard" />
       <recent name="C:\wamp64\www\E-commerce\app\Models" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\wamp64\www\E-commerce\app\Http\Requests\Dashboard\Product" />
+      <recent name="C:\wamp64\www\E-commerce\resources\views\dashboard\products" />
+      <recent name="C:\wamp64\www\E-commerce\resources\views\dashboard\products\prices" />
+      <recent name="C:\wamp64\www\E-commerce\resources\views\dashboard" />
+      <recent name="C:\wamp64\www\E-commerce\database\seeds" />
     </key>
   </component>
   <component name="RunManager">
@@ -222,6 +229,12 @@
       <workItem from="1601450664979" duration="9705000" />
       <workItem from="1601468801256" duration="9509000" />
       <workItem from="1601561591869" duration="576000" />
+      <workItem from="1602951085375" duration="5797000" />
+      <workItem from="1603037321753" duration="613000" />
+      <workItem from="1603040566593" duration="2361000" />
+      <workItem from="1603068385960" duration="7506000" />
+      <workItem from="1603124492842" duration="10893000" />
+      <workItem from="1603191791237" duration="2913000" />
     </task>
     <servers />
   </component>

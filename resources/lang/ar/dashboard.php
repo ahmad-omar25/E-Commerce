@@ -131,7 +131,16 @@ return [
         'tag' => 'اختر العلامة التجارية',
         'brand' => 'اختر الماركة',
         'slug' => 'الاسم بالرابط',
+        'images' => 'الصور',
+        'active' => 'الحالة',
         'actions' => 'اكشن',
+        'sku' => 'المستودع',
+        'stock' => 'ادارة المستودع',
+        'price' => 'سعر المنتج',
+        'special_price' => 'سعر خاص',
+        'special_price_type' => 'نوع السعر',
+        'special_price_start' => 'تاريخ البداية',
+        'special_price_end' => 'تاريخ الانتهاء',
     ],
 
     // Delete Button
