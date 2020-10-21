@@ -19,7 +19,7 @@
         <section id="basic-form-layouts">
             <div class="row match-height">
                 <div class="col-md-12">
-                    <div class="card border-top-pink border-bottom-pink border-left-pink border-right-pink">
+                    <div class="card">
                         <div class="card-header">
                             <h4 class="card-title" id="basic-layout-form">
                                 <i class="ft-user"></i>

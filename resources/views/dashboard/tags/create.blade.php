@@ -19,11 +19,11 @@
         <section id="basic-form-layouts">
             <div class="row match-height">
                 <div class="col-md-12">
-                    <div class="card border-top-pink border-bottom-pink border-left-pink border-right-pink">
+                    <div class="card">
                         <div class="card-header">
                             <h4 class="card-title" id="basic-layout-form">
                                 <i class="ft-user"></i>
-                                {{__('dashboard.tags.brand_data')}}</h4>
+                                {{__('dashboard.tags.tag_data')}}</h4>
                             <a class="heading-elements-toggle"><i
                                     class="la la-ellipsis-v font-medium-3"></i></a>
                             <div class="heading-elements">

@@ -3,6 +3,7 @@
 namespace App\Http\Controllers\Dashboard;
 
 use App\Http\Controllers\Controller;
+use App\Http\Requests\Dashboard\Product\Image;
 use App\Http\Requests\Dashboard\Product\Price;
 use App\Http\Requests\Dashboard\Product\Stock;
 use App\Http\Requests\Dashboard\Product\Store;
@@ -101,6 +102,45 @@ class ProductController extends Controller
         try {
             Product::whereId($request->product_id)->update($request->except('_token', 'product_id'));
             toast((__('dashboard.update_successfully')), 'success');
+            return redirect()->route('products.index');
+        } catch (\Exception $exception) {
+            toast((__('dashboard.error_message')), 'error');
+            return redirect()->route('products.index');
+        }
+    }
+
+    // Get Product Images
+    public function getImages($product_id)
+    {
+        $product = Product::findOrFail($product_id);
+        return view('dashboard.products.images.create', compact('product'));
+    }
+
+    // Store Product Images
+    public function storeImages(Request $request)
+    {
+        $file = $request->file('dzfile');
+        $filename = uploadImage('products', $file);
+
+        return response()->json([
+            'name' => $filename,
+            'original_name' => $file->getClientOriginalName(),
+        ]);
+    }
+
+    // Store Product Images DB
+    public function storeImagesDb(Image $request)
+    {
+        try {
+            if ($request->has('document') && $request->document > 0) {
+                foreach ($request->document as $image) {
+                    \App\Models\Image::create([
+                        'product_id' => $request->input('product_id'),
+                        'photo' => $image,
+                    ]);
+                }
+            }
+            toast((__('dashboard.create_successfully')), 'success');
             return redirect()->route('products.index');
         } catch (\Exception $exception) {
             toast((__('dashboard.error_message')), 'error');

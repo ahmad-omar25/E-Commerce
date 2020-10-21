@@ -7,8 +7,10 @@
             <div class="row breadcrumbs-top">
                 <div class="breadcrumb-wrapper col-12">
                     <ol class="breadcrumb">
-                        <li class="breadcrumb-item"><a href="{{route('admin.dashboard')}}">{{__('dashboard.home')}}</a></li>
-                        <li class="breadcrumb-item"><a href="{{route('products.index')}}">{{__('dashboard.products.title')}}</a></li>
+                        <li class="breadcrumb-item"><a href="{{route('admin.dashboard')}}">{{__('dashboard.home')}}</a>
+                        </li>
+                        <li class="breadcrumb-item"><a
+                                href="{{route('products.index')}}">{{__('dashboard.products.title')}}</a></li>
                         <li class="breadcrumb-item active">{{__('dashboard.products.stock')}}</li>
                     </ol>
                 </div>
@@ -37,14 +39,15 @@
                         </div>
                         <div class="card-content collapse show">
                             <div class="card-body">
-                                <form class="form" action="{{route('admin.product.stock.store')}}" method="POST" enctype="multipart/form-data">
+                                <form class="form" action="{{route('admin.product.stock.store')}}" method="POST"
+                                      enctype="multipart/form-data">
                                     @csrf
                                     <input type="hidden" name="product_id" value="{{$product->id}}">
                                     <div class="form-body">
                                         <div class="row">
                                             <div class="col-md-6">
                                                 <div class="form-group">
-                                                    <label for="projectinput1"> كود  المنتج
+                                                    <label for="projectinput1"> كود المنتج
                                                     </label>
                                                     <input type="text" id="sku"
                                                            class="form-control"
@@ -60,7 +63,8 @@
                                                 <div class="form-group">
                                                     <label for="projectinput1">تتبع المستودع
                                                     </label>
-                                                    <select name="manage_stock" class="select2 form-control" id="manageStock">
+                                                    <select name="manage_stock" class="select2 form-control"
+                                                            id="manageStock">
                                                         <optgroup label="من فضلك أختر النوع ">
                                                             <option value="0" selected>عدم اتاحه التتبع</option>
                                                             <option value="1">اتاحة التتبع</option>
@@ -78,10 +82,10 @@
                                                 <div class="form-group">
                                                     <label for="projectinput1">حالة المنتج
                                                     </label>
-                                                    <select name="in_stock" class="select2 form-control" >
+                                                    <select name="in_stock" class="select2 form-control">
                                                         <optgroup label="من فضلك أختر  ">
                                                             <option value="1">متاح</option>
-                                                            <option value="0">غير متاح </option>
+                                                            <option value="0">غير متاح</option>
                                                         </optgroup>
                                                     </select>
                                                     @error('in_stock')
@@ -91,7 +95,7 @@
                                             </div>
 
 
-                                            <div class="col-md-6" style="display:none"  id="qtyDiv">
+                                            <div class="col-md-6" style="display:none" id="qtyDiv">
                                                 <div class="form-group">
                                                     <label for="projectinput1">الكمية
                                                     </label>
@@ -106,11 +110,13 @@
                                                 </div>
                                             </div>
                                         </div>
-                                    <div class="form-actions">
-                                        <button type="submit" class="btn btn-primary">
-                                            <i class="la la-check-square-o" style="float:right;margin:-1px 9px 0px 10px;"></i>{{__('dashboard.save')}}
-                                        </button>
-                                        @include('dashboard.shared.buttons.back')
+                                        <div class="form-actions">
+                                            <button type="submit" class="btn btn-primary">
+                                                <i class="la la-check-square-o"
+                                                   style="float:right;margin:-1px 9px 0px 10px;"></i>{{__('dashboard.save')}}
+                                            </button>
+                                            @include('dashboard.shared.buttons.back')
+                                        </div>
                                     </div>
                                 </form>
                             </div>
@@ -126,10 +132,10 @@
 @section('script')
 
     <script>
-        $(document).on('change','#manageStock',function(){
-            if($(this).val() == 1 ){
+        $(document).on('change', '#manageStock', function () {
+            if ($(this).val() == 1) {
                 $('#qtyDiv').show();
-            }else{
+            } else {
                 $('#qtyDiv').hide();
             }
         });

@@ -108,7 +108,7 @@ return [
         'view_all' => 'عرض الكل',
         'create' => 'اضافة علامة جديد',
         'edit' => 'تعديل علامة ',
-        'brand_data' => 'بيانات العلامة التجارية',
+        'tag_data' => 'بيانات العلامة التجارية',
         // Table
         'name' => 'الاسم',
         'slug' => 'الاسم بالرابط',
@@ -131,7 +131,7 @@ return [
         'tag' => 'اختر العلامة التجارية',
         'brand' => 'اختر الماركة',
         'slug' => 'الاسم بالرابط',
-        'images' => 'الصور',
+        'images' => 'صور المنتج',
         'active' => 'الحالة',
         'actions' => 'اكشن',
         'sku' => 'المستودع',
@@ -141,6 +141,19 @@ return [
         'special_price_type' => 'نوع السعر',
         'special_price_start' => 'تاريخ البداية',
         'special_price_end' => 'تاريخ الانتهاء',
+    ],
+
+    // Attributes
+    'attributes' => [
+        'title_singular' => 'خصائص المنتج',
+        'title' => 'خصائص المنتج',
+        'view_all' => 'عرض الكل',
+        'create' => 'اضافة خصائص جديد',
+        'edit' => 'تعديل خصائص المنتج ',
+        'attribute_data' => 'بيانات خصائص المنتج',
+        // Table
+        'name' => 'اسم خصائص المنتج',
+        'actions' => 'اكشن',
     ],
 
     // Delete Button

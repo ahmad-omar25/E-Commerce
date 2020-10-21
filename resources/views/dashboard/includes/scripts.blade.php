@@ -3,8 +3,7 @@
 <!-- BEGIN VENDOR JS-->
 <script src="{{asset('dashboard/vendors/js/tables/datatable/datatables.min.js')}}"
         type="text/javascript"></script>
-<script src="{{asset('dashboard/vendors/js/tables/datatable/dataTables.buttons.min.js')}}"
-        type="text/javascript"></script>
+<script src="{{asset('dashboard/vendors/js/tables/datatable/dataTables.buttons.min.js')}}" type="text/javascript"></script>
 
 <script src="{{asset('dashboard/vendors/js/forms/toggle/bootstrap-switch.min.js')}}"
         type="text/javascript"></script>
@@ -15,6 +14,7 @@
 <script src="{{asset('dashboard/vendors/js/forms/select/select2.full.min.js')}}" type="text/javascript"></script>
 <script src="{{asset('dashboard/js/scripts/forms/select/form-select2.js')}}" type="text/javascript"></script>
 
+<script src="{{asset('dashboard/vendors/js/extensions/dropzone.min.js')}}" type="text/javascript"></script>
 <!-- BEGIN PAGE VENDOR JS-->
 <script src="{{asset('dashboard/vendors/js/charts/chart.min.js')}}" type="text/javascript"></script>
 <script src="{{asset('dashboard/vendors/js/charts/echarts/echarts.js')}}" type="text/javascript"></script>
@@ -43,9 +43,6 @@
 <script src="{{asset('dashboard/js/scripts/extensions/block-ui.js')}}" type="text/javascript"></script>
 <script src="{{asset('dashboard/js/scripts/modal/components-modal.js')}}" type="text/javascript"></script>
 <script src="{{asset('dashboard/js/custom/order.js')}}" type="text/javascript"></script>
-
-
-
 
 
 <script>

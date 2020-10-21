@@ -19,7 +19,7 @@
         <section id="basic-form-layouts">
             <div class="row match-height">
                 <div class="col-md-12">
-                    <div class="card border-top-pink border-bottom-pink border-left-pink border-right-pink">
+                    <div class="card">
                         <div class="card-header">
                             <h4 class="card-title" id="basic-layout-form">
                                 <i class="ft-user"></i>
@@ -46,7 +46,7 @@
                                             <div class="form-group col-12 mb-2">
                                                 <div class="text-center">
 
-                                                    <img src="{{$brand->logo}}" class="rounded-circle width-150  height-150" style="border: 1px solid #E91E63;" alt="{{$brand->name}}">
+                                                    <img src="{{$brand->logo}}" class="rounded-circle width-150  height-150" alt="{{$brand->name}}">
                                                 </div>
                                             </div>
                                         </div>
