@@ -26,6 +26,7 @@ return [
     // Buttons
     'save' => 'حفظ',
     'back' => 'تراجع',
+    'number' => 'الرقم',
 
     // Latest Orders
     'orders' => [
@@ -147,6 +148,19 @@ return [
     'attributes' => [
         'title_singular' => 'خصائص المنتج',
         'title' => 'خصائص المنتج',
+        'view_all' => 'عرض الكل',
+        'create' => 'اضافة خصائص جديد',
+        'edit' => 'تعديل خصائص المنتج ',
+        'attribute_data' => 'بيانات خصائص المنتج',
+        // Table
+        'name' => 'اسم خصائص المنتج',
+        'actions' => 'اكشن',
+    ],
+
+    // Options
+    'options' => [
+        'title_singular' => 'الخصائص',
+        'title' => 'الخصائص',
         'view_all' => 'عرض الكل',
         'create' => 'اضافة خصائص جديد',
         'edit' => 'تعديل خصائص المنتج ',

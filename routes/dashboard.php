@@ -70,6 +70,9 @@ Route::group(['prefix' => LaravelLocalization::setLocale(), 'middleware' => ['lo
         // Attributes Routes
         Route::resource('attributes', 'AttributeController');
 
+        // Options Routes
+        Route::resource('options', 'OptionController');
+
         // Logout Route
         Route::any('logout', 'Auth\LoginController@logout')->name('admin.logout');
     });

@@ -3,6 +3,7 @@
 namespace App\Http\Controllers\Dashboard;
 
 use App\Http\Controllers\Controller;
+use App\Http\Requests\Dashboard\Attribute\Store;
 use App\Models\Attribute;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\DB;
@@ -19,7 +20,7 @@ class AttributeController extends Controller
         return view('dashboard.attributes.create');
     }
 
-    public function store(Request $request)
+    public function store(Store $request)
     {
         try {
             DB::beginTransaction();
@@ -43,7 +44,7 @@ class AttributeController extends Controller
         return view('dashboard.attributes.edit', compact('attribute'));
     }
 
-    public function update($id, Request $request) {
+    public function update($id, Store $request) {
         try {
             $attribute = Attribute::find($id);
             if (!$attribute) {

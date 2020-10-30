@@ -16,4 +16,9 @@ class Attribute extends Model
     protected $fillable = ['name'];
 
     protected $hidden = ['translations'];
+
+    public function options()
+    {
+        return $this->hasMany(Option::class, 'attribute_id');
+    }
 }

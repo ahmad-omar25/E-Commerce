@@ -20,39 +20,24 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="fe1aae20-efbc-4116-bf1c-4bbbb6c649bb" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/Dashboard/AttributeController.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Http/Requests/Dashboard/Product/Image.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Models/Attribute.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Models/AttributeTranslation.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Models/Image.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/database/migrations/2020_10_21_154026_create_attributes_table.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/database/migrations/2020_10_21_154155_create_attribute_translations_table.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/assets/dashboard/images/products/6IG4EuwtcjEnhBQd8cYWFdifETvmTmFhB2efM4Lg.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/assets/dashboard/images/products/B4jVstWBpXpl45NlWDXQ5bgudwUI4JmyOKk9bvA0.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/assets/dashboard/images/products/bagZx9y3H0MOSMkxa1qI6JByvIVzaK7gY8enpHE4.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/assets/dashboard/images/products/k63s0CySKdXmhEF6vddys02dpEqpVYdWt5UqUdRC.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/assets/dashboard/images/products/qBUoxdWlpRsSZfINxkIPt8cUdntbvbUT2RVO51Uy.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/dashboard/attributes/create.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/dashboard/attributes/edit.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/dashboard/attributes/index.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/dashboard/products/images/create.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/Dashboard/OptionController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Http/Requests/Dashboard/Attribute/Store.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Models/Option.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Models/OptionTranslation.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Rules/UniqueAttributeName.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/database/migrations/2020_10_30_182814_create_options_table.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/database/migrations/2020_10_30_182924_create_option_translations_table.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/database/migrations/2020_10_30_185852_add_price_column_to_options_table.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/dashboard/options/create.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/dashboard/options/edit.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/dashboard/options/index.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Dashboard/ProductController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Dashboard/ProductController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/filesystems.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/filesystems.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Dashboard/AttributeController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Dashboard/AttributeController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Models/Attribute.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/Attribute.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Models/Product.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/Product.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/lang/ar/dashboard.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/lang/ar/dashboard.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/dashboard/brands/create.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/dashboard/brands/create.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/dashboard/brands/edit.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/dashboard/brands/edit.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/dashboard/categories/create.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/dashboard/categories/create.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/dashboard/categories/edit.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/dashboard/categories/edit.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/dashboard/includes/scripts.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/dashboard/includes/scripts.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/dashboard/attributes/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/dashboard/attributes/index.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/dashboard/includes/sidebar.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/dashboard/includes/sidebar.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/dashboard/layout/app.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/dashboard/layout/app.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/dashboard/products/general/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/dashboard/products/general/index.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/dashboard/products/stock/create.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/dashboard/products/stock/create.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/dashboard/subCategories/create.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/dashboard/subCategories/create.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/dashboard/subCategories/edit.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/dashboard/subCategories/edit.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/dashboard/tags/create.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/dashboard/tags/create.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/dashboard/tags/edit.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/dashboard/tags/edit.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/routes/dashboard.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/dashboard.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -207,17 +192,17 @@
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\wamp64\www\E-commerce\resources\views\dashboard\products\general" />
-      <recent name="C:\wamp64\www\E-commerce\public\assets\dashboard" />
-      <recent name="C:\wamp64\www\E-commerce\app\Models" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\wamp64\www\E-commerce\resources\views\dashboard" />
       <recent name="C:\wamp64\www\E-commerce\app\Models" />
       <recent name="C:\wamp64\www\E-commerce\app\Http\Requests\Dashboard\Product" />
       <recent name="C:\wamp64\www\E-commerce\resources\views\dashboard\products" />
       <recent name="C:\wamp64\www\E-commerce\resources\views\dashboard\products\prices" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\wamp64\www\E-commerce\resources\views\dashboard\products\general" />
+      <recent name="C:\wamp64\www\E-commerce\public\assets\dashboard" />
+      <recent name="C:\wamp64\www\E-commerce\app\Models" />
     </key>
   </component>
   <component name="RunManager">
@@ -257,7 +242,9 @@
       <workItem from="1603124492842" duration="10893000" />
       <workItem from="1603191791237" duration="3002000" />
       <workItem from="1603211255875" duration="7383000" />
-      <workItem from="1603291037701" duration="4667000" />
+      <workItem from="1603291037701" duration="4792000" />
+      <workItem from="1603297839150" duration="1535000" />
+      <workItem from="1604073241920" duration="11056000" />
     </task>
     <servers />
   </component>
@@ -288,10 +275,10 @@
       <screen x="0" y="0" width="1366" height="738" />
     </state>
     <state x="430" y="159" key="#com.intellij.ide.util.TreeClassChooserDialog/0.0.1366.738@0.0.1366.738" timestamp="1600681209110" />
-    <state x="413" y="124" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1603296300756">
+    <state x="413" y="124" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1604083136240">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
-    <state x="413" y="124" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.1366.738@0.0.1366.738" timestamp="1603296300756" />
+    <state x="413" y="124" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.1366.738@0.0.1366.738" timestamp="1604083136239" />
     <state x="458" y="283" width="450" height="272" key="ComposerInitDialogKey" timestamp="1600253812449">
       <screen x="0" y="0" width="1366" height="738" />
     </state>

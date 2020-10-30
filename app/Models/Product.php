@@ -49,8 +49,18 @@ class Product extends Model
         return $this->belongsToMany(Tag::class, 'product_tags');
     }
 
+    public function options()
+    {
+        return $this->hasMany(Option::class, 'product_id');
+    }
+
     // Get Active
     public function getActive() {
         return $this->is_active == 0 ? (__('dashboard.not_active')) : (__('dashboard.active'));
+    }
+
+    // Scope Active
+    public function scopeActive($q) {
+        return $q->where('is_active', 1);
     }
 }
